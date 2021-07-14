@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*----------------
+ first-section
+ ----------------- */
+ 
+ .first-section{
+     display: flex;
+     justify-content:space-around;
+     background-color:#2D25A0;
+     width: 1440px;
+     border: 2px orange solid;
+     color: white;
+     font-size: 1.4em;
+ }
+ 
+ 
+ .title{
+     background-color: orange;
+     padding: 10px;
+ }
+ .title :hover{
+    background-color: grey;
+    padding: 10px;
+}
+ .watch{
+     background-color: rgb(14, 104, 84);
+     padding-left:50px; 
+     border-radius: 10px; 
+ }
+ .watch :hover{
+     background-color: lime;
+     border-radius: 2px;
+ } 
+
+ .banner img{
+     width:556px;
+     height: 438px;
+ }
+
+ /*-----------
+  players
+  ------------- */
+
+
+  .player-thumbnail img{
+      width: 300px;
+      height: 256px;
+      margin-top: 30px ;
+      border: 3px solid wheat; 
+      padding: 10px;    
+  }
