@@ -105,9 +105,9 @@ body{
   }
 
 
-/*-----------------------------
- football team  members
----------------------------- */
+              /*-----------------------------
+               football team  members
+              ---------------------------- */
 .team-members{
     position:relative;
 }
@@ -209,35 +209,61 @@ footer{
    }
 
 
-   /* -----------
-   media quaries 
-   ---------------*/
+   
+                   /* -----------
+                   media quaries 
+                   ---------------*/
+
+
    @media only screen and (max-width:688px) {
-.first-section{
+.container{
+    margin: 0px;
+}
+
+    .first-section{
    display: inline;
+   
 }
 .banner img{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 80%;
     margin-top: 50px;
 }
 .watch{
     margin-bottom:40px;
-    margin-left: 0%;
+    margin-left: 0%;  
+}
+.watch:hover{
+    background-color: #34ace0;
 }
 .title{
     background-color: #FEA47F;
+    width: 300px;
 }
        /*--------
         players
         ---------- */
+
  .all-players{
      margin-left: 0%;
+     margin-right: 0%;
+ }
+ .player-thumbnail img{
+     padding-right: 30px;
+     border-radius: 0%;
+     padding-left: 0%;
+     width: 290px;
  }
  .players{
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
 }
+
+.player{
+    padding-left: 10px;
+    width: 300px;
+}
+
 .player-details, p{
     text-align: justify;
     background-color: #9AECDB;
@@ -245,9 +271,46 @@ footer{
 .player-name{
     color: black;
 }
-/*--------------
- copa-america
--------------- */
+
+                 /*--------------------
+                  about team players 
+                  ---------------------*/
+.b-image img{
+    margin-left: 0%;
+    position: relative;
+}
+.teams{
+    width: 100px;
+    grid-template-columns: 5% 5%;
+    grid-gap: 5em;
+   
+}
+li{
+    width: 50px;
+    height: 12px;
+    padding:5px 10px 15px;
+    
+
+    margin: 0%;
+    font-size:10px;
+}
+.member-name{   
+    top:10px;
+    left: 10px;
+    width: 200px;
+    position: absolute;
+}
+.member-name h1{
+    margin-top: 0%;
+    margin-left: 10px;
+    font-size: 1.2em;
+    color: #34ace0;
+
+}
+
+                    /*--------------
+                     copa-america
+                    -------------- */
  .highlights{
      margin-left: 0%;
      margin-right: 0%;
@@ -266,42 +329,41 @@ footer{
          
   }  
    }
-/* ----------
-tab;et devices 
--------------*/
+                   /* ----------
+                   tablet devices media quare
+                   -------------*/
 
 @media only screen and (min-width:688px) and
-(max-width:992px) {
-    .first-section{
-        margin-left:0px;
-        margin-right: 60px;             
-      width: 150%;
-      
-    }
+(max-width:992px){
+                     /* ----------
+                     players
+                     ---------------- */
+    
     .players{
-        display: grid;
-        margin-left: 0%;
-       
+        grid-template-columns: repeat(2, 1fr);
         justify-content: space-between;
-        
     }
-    .all-players{
-        margin-left: 0%;
-        margin-right: 0%;
+    .player{
+        margin: 25px;
     }
-    .match img{
-        margin-left: 0%;
-        width: 190%;
-        height: 100%;
-    }
-    .highlights{
-        margin-left:30px;
-    }
-
-footer{
-    justify-content: center;
-    align-items: center;
+   .first-section{
+       width:950px;
+      
+   }
+   .b-image img{
+       margin: 0%;
+       width: 100%;
+       position: relative;
+   }
+   .teams{
+       position: absolute;
+       top: 0px;
+   }
+   .member-name h1{
+       margin:0%;
+   }
+   
 }
+   
 
 
-}
