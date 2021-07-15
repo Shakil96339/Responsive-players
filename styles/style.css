@@ -64,17 +64,19 @@ body{
   players
   ------------- */
 .all-players{
-    margin-left: 100px;
+    margin-left: 80px;
+    
 }
   .players{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);   
+    grid-template-columns: repeat(3, 1fr);  
+    justify-content: space-around; 
     background-color: whitesmoke;
 
    
 }
 .player{
-    width: 320px;  
+    width: 350px;  
     left: 180px;
     top: 747px;
     border: 3px solid #c7ecee;
@@ -101,6 +103,59 @@ body{
   .player-name{
       color: rgb(48, 171, 182);
   }
+
+
+/*-----------------------------
+ football team  members
+---------------------------- */
+.team-members{
+    position:relative;
+}
+.member-name{
+    position:absolute;
+    top:30px;
+    left: 30%;
+    width: 400px;
+    
+}
+.color{
+    color: #F97F51;
+}
+
+.b-image img{
+    width:80%;
+    margin:5% 0px 0px 10%;
+    background-color:#aaa69d;
+           
+}
+.member-name h1{
+    font-size: 2em;
+    margin-left:10%;
+    margin-bottom: 0;
+}
+ li{
+    background-color: #b2bec3;
+    border: 1px solid #32ff7e;
+    width: 120px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    column-count: #dfe4ea;   
+   
+}
+li:hover{
+    background-color: #2f354271;
+    color: blanchedalmond;
+    
+}
+.teams {
+    display:grid ;
+    grid-template-columns:15% 15%;
+    grid-gap:9em;
+          
+}
+
+
 
   /*------------------------ 
   Copa America highlites
